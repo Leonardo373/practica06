@@ -7,12 +7,9 @@ package mx.com.softgame.poo1game.personajes;
 public class Personaje{
 	private String nombre;
 	private int edad;
-	public Personaje (String nombre, int edad){
+	public Personaje (String nombre){
 		this.nombre = nombre;
-		this.edad = edad;
-	}
-	public Personaje(){
-		edad = 0;
+		this.edad = 0;
 	}
 	public String getNombre(){
 		return nombre;
@@ -21,11 +18,10 @@ public class Personaje{
 		return edad;
 	}
 	public boolean setEdad(int edad){
-		if (edad > 0 && edad < 120){
+		if (edad >= 0 && edad <= 120){
 			this.edad = edad;
 			return true;
-		}
-		else{
+		} else{
 			return false;
 		}
 	}

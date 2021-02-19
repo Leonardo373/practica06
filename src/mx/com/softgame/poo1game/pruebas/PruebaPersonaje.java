@@ -17,14 +17,11 @@ public class PruebaPersonaje{
 		Personaje per08 = per03;
 		Personaje per09 = per02;
 		Personaje per10 = per01;
-
 		per06.setNombre("Jorge Eduardo");
 		per08.setNombre("Yosselin");
 		per10.setNombre("Ana");
-
 		per07.setEdad(int(Math.random()*1000))
 		per09.setEdad(int(Math.random()*1000))
-
 		System.out.println(per01.getDetalle());
 		System.out.println(per02.getDetalle());
 		System.out.println(per03.getDetalle());

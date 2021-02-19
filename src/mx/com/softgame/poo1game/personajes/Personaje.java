@@ -1,7 +1,7 @@
 /*
 Nombre: Leonardo García Nieves
 Hora de inicio: 7:40 a.m.
-Hora de finalización:  a.m.
+Hora de finalización: 10:11 a.m.
 */
 package mx.com.softgame.poo1game.personajes;
 public class Personaje{

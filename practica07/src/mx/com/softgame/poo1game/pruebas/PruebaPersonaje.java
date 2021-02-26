@@ -14,11 +14,13 @@ public class PruebaPersonaje{
 			}else{
 				System.out.println(per01.getDetalle()+"sin modificar en edad a"+ed);
 			}
+			ed = (int)(Math.random()*250);
 			if (per02.setEdad(ed)) {
 				System.out.println(per02.getDetalle()+"se modificó la edad");
 			}else{
 				System.out.println(per02.getDetalle()+"sin modificar en edad a"+ed);
 			}
+			ed = (int)(Math.random()*250);
 			if (per03.setEdad(ed)) {
 				System.out.println(per03.getDetalle()+"se modificó la edad");
 			}else{

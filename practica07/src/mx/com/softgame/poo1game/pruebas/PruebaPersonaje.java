@@ -33,6 +33,6 @@ public class PruebaPersonaje{
 				continue outfor;
 			}
 		}while(!per04.setEdad(ed));
-		System.out.println(per04.getDetalle()+"\n");
+		System.out.println(per04.getDetalle());
 	}
 }

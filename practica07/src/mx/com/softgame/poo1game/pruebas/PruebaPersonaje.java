@@ -6,17 +6,23 @@ public class PruebaPersonaje{
 		Personaje per02 = new Personaje("Erick");
 		Personaje per03 = new Personaje("Wendy");
 		Personaje per04 = new Personaje("Lesly");
-		per04.setEdad(-10);
-		for (i = 0;i = 2 ;i++) {
-			int rand1 = (int)(Math.random()*250);
-			int rand2 = (int)(Math.random()*250);
-			int rand3 = (int)(Math.random()*250);
-			per01.setEdad(rand1);
-			System.out.println(per01.getDetalle()"se modificó la edad");
-			per02.setEdad(rand2);
-			System.out.println(per02.getDetalle()"se modificó la edad");
-			per03.setEdad(rand3);
-			System.out.println(per03.getDetalle()"se modificó la edad");
+		for (int i = 0;i < 3 ;i++) {
+			int ed = (int)(Math.random()*250);
+			if (per01.setEdad(ed)) {
+				System.out.println(per01.getDetalle()"se modificó la edad");
+			}else{
+				System.out.println(per01.getDetalle()"sin modificar en edad a"+ed);
+			}
+			if (per02.setEdad(ed)) {
+				System.out.println(per02.getDetalle()"se modificó la edad");
+			}else{
+				System.out.println(per02.getDetalle()"sin modificar en edad a"+ed);
+			}
+			if (per03.setEdad(ed)) {
+				System.out.println(per03.getDetalle()"se modificó la edad");
+			}else{
+				System.out.println(per03.getDetalle()"sin modificar en edad a"+ed);
+			}
 		}
 		System.out.println(per01.getDetalle());
 		System.out.println(per02.getDetalle());

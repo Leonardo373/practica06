@@ -13,23 +13,23 @@ public class Planta extends Personaje{
 		this(nombre, 3, escudo);
 	}
 	public Planta(String nombre, int vida){
-		this(nombre, vida, "A");
+		this(nombre, vida, 'A');
 	}
 	public Planta(String nombre){
-		this(nombre, 3, "A");
+		this(nombre, 3, 'A');
 	}
 	public String getDetalle(){
 		return getDetalle()+" "+escudo;
 	}
 	public void decVida(){
-		if (escudo == "A") {
+		if (escudo == 'A') {
 			decVida(2);
 		}else{
 			decVida();
 		}
 	}
 	public void decVida(int resta){
-		if (escudo == "A"){
+		if (escudo == 'A'){
 			decVida(resta*2);
 		}else{
 			decVida(resta);

@@ -21,4 +21,7 @@ public class Planta extends Personaje{
 	public Planta(String nombre){
 		this(nombre, 3, "A");
 	}
+	public String getDetalle(){
+		return getDetalle()+" "+escudo;
+	}
 }

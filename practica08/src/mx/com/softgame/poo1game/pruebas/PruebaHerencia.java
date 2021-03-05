@@ -28,10 +28,12 @@ public class PruebaHerencia{
 		for (Personaje i: personajes) {
 			System.out.println(i.getDetalle());
 			if (i instanceof Planta) {
-				System.out.println("Soy Planta"+getEscudo());
+				Planta seleccionada = (Planta) i;
+				System.out.println("Soy Planta"+seleccionada.getEscudo());
 			}
 			if (i instanceof Zombie) {
-				System.out.println("Soy Zombie"+getAtaque());
+				Zombie seleccionado = (Zombie) i;
+				System.out.println("Soy Zombie"+seleccionado.getAtaque());
 			}
 		}
 	}

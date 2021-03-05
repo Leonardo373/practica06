@@ -1,12 +1,10 @@
 package mx.com.softgame.poo1game.personajes.buenos;
 import mx.com.softgame.poo1game.personajes.*;
 public class Planta extends Personaje{
-	char escudo;
-
+	private char escudo;
 	public char getEscudo(){
 		return escudo;
 	}
-
 	public Planta(String nombre, int vida, char escudo){
 		this.nombre = nombre;
 		this.vida = vida;
@@ -23,5 +21,19 @@ public class Planta extends Personaje{
 	}
 	public String getDetalle(){
 		return getDetalle()+" "+escudo;
+	}
+	public void decVida(){
+		if (escudo == "A") {
+			decVida(2);
+		}else{
+			decVida();
+		}
+	}
+	public void decVida(int resta){
+		if (escudo == "A"){
+			decVida(resta*2);
+		}else{
+			decVida(resta);
+		}
 	}
 }

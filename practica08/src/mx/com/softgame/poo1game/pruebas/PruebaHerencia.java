@@ -35,6 +35,9 @@ public class PruebaHerencia{
 				Zombie seleccionado = (Zombie) i;
 				System.out.println("Soy Zombie"+seleccionado.getAtaque());
 			}
+			int num = (num)(Math.random()*10)
+			i.decVida(num);
+			System.out.println(i.getDetalle);
 		}
 	}
 }

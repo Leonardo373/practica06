@@ -24,5 +24,15 @@ public class PruebaHerencia{
 		personajes[6] = zom01;
 		personajes[7] = zom02;
 		personajes[8] = zom03;
+
+		for (Personaje i: personajes) {
+			System.out.println(i.getDetalle());
+			if (i instanceof Planta) {
+				System.out.println("Soy Planta"+getEscudo());
+			}
+			if (i instanceof Zombie) {
+				System.out.println("Soy Zombie"+getAtaque());
+			}
+		}
 	}
 }

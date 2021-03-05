@@ -6,8 +6,7 @@ public class Planta extends Personaje{
 		return escudo;
 	}
 	public Planta(String nombre, int vida, char escudo){
-		this.nombre = nombre;
-		this.vida = vida;
+		super(nombre, vida);
 		this.escudo = escudo;
 	}
 	public Planta(String nombre, char escudo){

@@ -18,4 +18,18 @@ public class Zombie extends Personaje{
 	public String getDetalle(){
 		return getDetalle()+" "+ataque;
 	}
+	public void decVida(){
+		if (ataque == false) {
+			decVida(3);
+		}else{
+			decVida(2);
+		}
+	}
+	public void decVida(int resta){
+		if (ataque == false) {
+			decVida(resta*3);
+		}else{
+			decVida(resta*2);
+		}
+	}
 }

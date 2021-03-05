@@ -16,20 +16,20 @@ public class Zombie extends Personaje{
 		this(nombre, 3, false);
 	}
 	public String getDetalle(){
-		return getDetalle()+" "+ataque;
+		return super.getDetalle()+" "+ataque;
 	}
 	public void decVida(){
 		if (ataque == false) {
-			decVida(3);
+			super.decVida(3);
 		}else{
-			decVida(2);
+			super.decVida(2);
 		}
 	}
 	public void decVida(int resta){
 		if (ataque == false) {
-			decVida(resta*3);
+			super.decVida(resta*3);
 		}else{
-			decVida(resta*2);
+			super.decVida(resta*2);
 		}
 	}
 }

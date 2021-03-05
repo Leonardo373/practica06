@@ -19,20 +19,20 @@ public class Planta extends Personaje{
 		this(nombre, 3, 'A');
 	}
 	public String getDetalle(){
-		return getDetalle()+" "+escudo;
+		return super.getDetalle()+" "+escudo;
 	}
 	public void decVida(){
 		if (escudo == 'A') {
-			decVida(2);
+			super.decVida(2);
 		}else{
-			decVida();
+			super.decVida();
 		}
 	}
 	public void decVida(int resta){
 		if (escudo == 'A'){
-			decVida(resta*2);
+			super.decVida(resta*2);
 		}else{
-			decVida(resta);
+			super.decVida(resta);
 		}
 	}
 }

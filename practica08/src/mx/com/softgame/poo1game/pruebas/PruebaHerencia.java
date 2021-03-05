@@ -1,4 +1,4 @@
-package mx.com.softgame.poo1game.prueba;
+package mx.com.softgame.poo1game.pruebas;
 import mx.com.softgame.poo1game.personajes.buenos.*;
 import mx.com.softgame.poo1game.personajes.malos.*;
 import mx.com.softgame.poo1game.personajes.*;
@@ -35,9 +35,9 @@ public class PruebaHerencia{
 				Zombie seleccionado = (Zombie) i;
 				System.out.println("Soy Zombie"+seleccionado.getAtaque());
 			}
-			int num = (num)(Math.random()*10)
+			int num = (int)(Math.random()*10);
 			i.decVida(num);
-			System.out.println(i.getDetalle);
+			System.out.println(i.getDetalle());
 		}
 	}
 }

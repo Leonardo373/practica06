@@ -9,7 +9,11 @@ public class Personaje{
 	private int vida;
 	public Personaje (String nombre){
 		this.nombre = nombre;
-		this vida = 0;
+		this.vida = 0;
+	}
+	public Personaje (String nombre){
+		this.nombre = nombre;
+		this.vida = 3;
 	}
 	public String getNombre(){
 		return nombre;
@@ -19,7 +23,7 @@ public class Personaje{
 	}
 	public boolean setVida(int vida){
 		if  (vida >= 0 && vida <= 100){
-			this vida = vida;
+			this.vida = vida;
 			return true;
 		} else{
 			return false;
@@ -32,5 +36,11 @@ public class Personaje{
 	}
 	public String getDetalle(){
 		return nombre + "\t" + vida;
+	}
+	public decVida(){
+		vida = vida -1;
+	}
+	public decVida(int){
+		vida = vida - int;
 	}
 }

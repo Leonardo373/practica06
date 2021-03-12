@@ -4,8 +4,7 @@ import mx.com.softgame.poo1game.personajes.malos.*;
 import mx.com.softgame.poo1game.personajes.*;
 public class PruebaHerencia{
 	public static void main(String[] args) {
-		public int i;
-		
+		public int i = 0;
 		Personaje per01 = new Personaje("Valeria", 99);
 		Personaje per02 = new Personaje("Octavio");
 		Planta plan01 = new Planta("Wendy", 10, 'B');
@@ -25,7 +24,7 @@ public class PruebaHerencia{
 		};
 
 		while(i < personajes.length){
-			for (Personaje p: personajes) {
+			for (Personaje p : personajes) {
 				if (p.Personaje == personajes[i]) {
 					System.out.println("***"+p.Personaje+"es identico a"+personajes[i]+", son el mismo objeto***");
 				}
@@ -39,7 +38,7 @@ public class PruebaHerencia{
 					System.out.println(p.Personaje+"!="+personajes[i]);
 				}
 			}
-			i++;
+			i = i + 1;
 		}
 		/*
 		for (Personaje i: personajes) {

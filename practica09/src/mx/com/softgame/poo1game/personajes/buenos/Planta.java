@@ -40,7 +40,7 @@ public class Planta extends Personaje{
 		Planta y = (Planta) e;
 		if (escudo == y.escudo){
 			return true;
-		}
+		}	
 		return result;
 	}
 }

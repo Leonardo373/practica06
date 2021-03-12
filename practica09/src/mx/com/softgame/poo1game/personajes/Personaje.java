@@ -33,7 +33,7 @@ public class Personaje{
 			this.nombre = nombre;
 		}
 	}
-	public String getDetalle(){
+	public String toString(){
 		return nombre + "\t" + vida;
 	}
 	public void decVida(){

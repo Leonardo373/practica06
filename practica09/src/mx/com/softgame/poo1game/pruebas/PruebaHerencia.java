@@ -25,10 +25,13 @@ public class PruebaHerencia{
 
 		while(i<personajes.length){
 			for (Personaje p: personajes) {
-				if ((Personaje p[]) == (Personaje i[])) {
-					System.out.println("***"Personaje p"es identico a"Personaje i", son el mismo objeto");
-				}else{
-					System.out.println(Personaje p "!=" Personaje i);
+				if (p.Personaje() == i.Personaje()) {
+					System.out.println("***"p.Personaje()"es identico a"i.Personaje()", son el mismo objeto***");
+				}if (p.Personaje.equals(i.Personaje())){
+					System.out.println("***"p.Personaje()"es igual a"i.Personaje()", son diferentes objetos***");
+				}
+				else{
+					System.out.println(p.Personaje()"!="i.Personaje());
 				}
 			}
 		}

@@ -35,7 +35,7 @@ public class Zombie extends Personaje{
 	public boolean equals(Object m){
 		boolean result = false;
 		Zombie z = (Zombie) m;
-		if (escudo == z.escudo){
+		if (ataque == z.ataque){
 			return true;
 		}
 		return result;

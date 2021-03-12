@@ -19,7 +19,7 @@ public class Planta extends Personaje{
 		this(nombre, 3, 'A');
 	}
 	public String toString(){
-		return super toString()+" "+escudo;
+		return super.toString()+" "+escudo;
 	}
 	public void decVida(){
 		if (escudo == 'A') {

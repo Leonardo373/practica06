@@ -32,4 +32,12 @@ public class Zombie extends Personaje{
 			super.decVida(resta*2);
 		}
 	}
+	public boolean equals(Object m){
+		boolean result = false;
+		Zombie z = (Zombie) m;
+		if (escudo == z.escudo){
+			return true;
+		}
+		return result;
+	}
 }

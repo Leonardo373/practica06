@@ -44,4 +44,11 @@ public class Personaje{
 			vida = vida - resta;
 		}
 	}
+	public boolean equals(Object o){
+		boolean result = false;
+		if ((x.nombre == y.nombre) && (x.vida == y.vida)){
+			return true;
+		}
+		return result;
+	}
 }

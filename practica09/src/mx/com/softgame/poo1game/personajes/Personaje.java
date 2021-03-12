@@ -46,7 +46,8 @@ public class Personaje{
 	}
 	public boolean equals(Object o){
 		boolean result = false;
-		if ((x.nombre == y.nombre) && (x.vida == y.vida)){
+		Personaje x = (Personaje) o;
+		if ((nombre == x.nombre) && (vida == x.vida)){
 			return true;
 		}
 		return result;

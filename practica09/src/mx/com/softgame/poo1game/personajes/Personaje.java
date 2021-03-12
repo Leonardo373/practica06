@@ -48,7 +48,7 @@ public class Personaje{
 		boolean result = false;
 		Personaje x = (Personaje) o;
 		if ((nombre == x.nombre) && (vida == x.vida)){
-			return true;
+			result = true;
 		}
 		return result;
 	}

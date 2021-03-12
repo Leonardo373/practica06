@@ -37,9 +37,10 @@ public class Planta extends Personaje{
 	}
 	public boolean equals(Object e){
 		boolean result = false;
+		super.equals(e);
 		Planta y = (Planta) e;
 		if (escudo == y.escudo){
-			return true;
+			result = true;
 		}	
 		return result;
 	}

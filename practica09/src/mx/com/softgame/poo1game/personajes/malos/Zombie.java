@@ -34,9 +34,10 @@ public class Zombie extends Personaje{
 	}
 	public boolean equals(Object m){
 		boolean result = false;
+		super.equals(m);
 		Zombie z = (Zombie) m;
 		if (ataque == z.ataque){
-			return true;
+			result = true;
 		}
 		return result;
 	}

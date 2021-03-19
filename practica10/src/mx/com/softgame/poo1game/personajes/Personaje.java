@@ -38,7 +38,7 @@ public class Personaje{
 		}
 	}
 	public String toString(){
-		return id + "\t" nombre + "\t" + vida;
+		return id + "\t" + nombre + "\t" + vida;
 	}
 	public void decVida(){
 		decVida(1);

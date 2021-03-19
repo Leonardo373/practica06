@@ -5,6 +5,9 @@ public class Planta extends Personaje{
 	public char getEscudo(){
 		return escudo;
 	}
+	public String getIdVida(){
+		return super.id +" "+ super.vida +" "+ escudo;
+	}
 	public Planta(String nombre, int vida, char escudo){
 		super(nombre, vida);
 		this.escudo = escudo;

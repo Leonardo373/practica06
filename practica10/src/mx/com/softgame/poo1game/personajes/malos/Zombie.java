@@ -5,6 +5,9 @@ public class Zombie extends Personaje{
 	public boolean getAtaque(){
 		return ataque;
 	}
+	public String getIdVida(){
+	return super.id +" "+ super.vida +" "+ ataque;
+	}
 	public Zombie(String nombre, int vida, boolean ataque){
 		super(nombre, vida);
 		this.ataque = ataque;

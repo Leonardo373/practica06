@@ -1,12 +1,13 @@
 /*
 Nombre: Leonardo García Nieves
-Hora de inicio: 7:35 a.m.
+Hora de inicio: 7:32 a.m.
 Hora de finalización: 00:00 a.m.
 */
 package mx.com.softgame.poo1game.personajes;
 public class Personaje{
 	protected String nombre;
 	protected int vida;
+	private final int id;
 	public Personaje (String nombre, int vida){
 		this.nombre = nombre;
 		this.vida = vida;
@@ -34,7 +35,7 @@ public class Personaje{
 		}
 	}
 	public String toString(){
-		return nombre + "\t" + vida;
+		return id + "\t" nombre + "\t" + vida;
 	}
 	public void decVida(){
 		decVida(1);

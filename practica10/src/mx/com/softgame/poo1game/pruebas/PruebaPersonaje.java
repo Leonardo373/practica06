@@ -1,6 +1,6 @@
 /*
 Nombre: Leonardo García Nieves
-Hora de inicio: 7:35 a.m.
+Hora de inicio: 7:32 a.m.
 Hora de finalización: 00:00 a.m.
 */
 package mx.com.softgame.poo1game.pruebas;

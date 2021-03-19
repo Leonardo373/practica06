@@ -21,6 +21,9 @@ public class Personaje{
 	public int getVida(){
 		return vida;
 	}
+	public final String getIdVida(){
+		return id + "\t" + vida;
+	}
 	public boolean setVida(int vida){
 		if  (vida >= 0 && vida <= 100){
 			this.vida = vida;

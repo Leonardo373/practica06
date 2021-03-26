@@ -18,6 +18,11 @@ public class Planta extends Personaje{
 	public Planta(String nombre){
 		this(nombre, 3, 'A');
 	}
+	public void setNombre(String nombre){
+		if (nombre.length() > 5 && nombre.length() < 10){
+			this.nombre = nombre;
+		}
+	}
 	public String getIdVida(){
 		return id + "\t" + vida + "\t" + escudo;
 	}

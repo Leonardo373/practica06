@@ -33,7 +33,8 @@ public abstract class Personaje extends Utileria {
 			return false;
 		}
 	}
-	public abstract void setNombre(String nombre){
+	public abstract void setNombre ();
+	public void setNombre(String nombre){
 		if (nombre.length() > 3 && nombre.length() < 10){
 			this.nombre = nombre;
 		}
@@ -49,7 +50,8 @@ public abstract class Personaje extends Utileria {
 			vida = vida - resta;
 		}
 	}
-	public abstract boolean equals(Object o){
+	public abstract boolean equals ();
+	public boolean equals(Object o){
 		boolean result = false;
 		Personaje x = (Personaje) o;
 		if ((nombre == x.nombre) && (vida == x.vida)){

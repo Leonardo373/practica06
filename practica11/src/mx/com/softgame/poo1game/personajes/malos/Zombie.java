@@ -15,6 +15,11 @@ public class Zombie extends Personaje{
 	public Zombie(String nombre){
 		this(nombre, 3, false);
 	}
+	public void setNombre(String nombre){
+		if (nombre.length() > 3 && nombre.length() < 8){
+			this.nombre = nombre;
+		}
+	}
 	//public final String getIdVida(){
 	//	return id + "\t" + vida + "\t" + escudo;
 	//}

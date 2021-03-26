@@ -1,6 +1,6 @@
 package mx.com.softgame.poo1game.personajes.buenos;
 import mx.com.softgame.poo1game.personajes.*;
-public class Planta extends Personaje{
+public abstract class Planta extends Personaje{
 	private char escudo;
 	public char getEscudo(){
 		return escudo;
@@ -22,9 +22,6 @@ public class Planta extends Personaje{
 		if (nombre.length() > 5 && nombre.length() < 10){
 			this.nombre = nombre;
 		}
-	}
-	public String getIdVida(){
-		return id + "\t" + vida + "\t" + escudo;
 	}
 	public String toString(){
 		return super.toString()+" "+ "{" + escudo + "}";

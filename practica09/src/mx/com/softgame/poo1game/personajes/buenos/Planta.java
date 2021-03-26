@@ -35,12 +35,13 @@ public class Planta extends Personaje{
 			super.decVida(resta);
 		}
 	}
-	public boolean equals(Object e){
+	public boolean equals(Object o) {
 		boolean result = false;
-		super.equals(e);
-		Planta y = (Planta) e;
-		if (escudo == y.escudo){
-			result = true;
+		if ( (o != null) && (o instanceof Planta) ) {
+			Planta d = (Planta) o;
+			if ((escudo == d.escudo) && super.equals(d)) {
+				result = true;
+			}
 		}
 		return result;
 	}

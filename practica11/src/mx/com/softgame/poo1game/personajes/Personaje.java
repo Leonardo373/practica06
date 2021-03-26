@@ -5,10 +5,10 @@ Hora de finalización: 00:00 a.m.
 */
 package mx.com.softgame.poo1game.personajes;
 import mx.com.softgame.poo1game.utils.*;
-public class Personaje extends Utileria {
+public abstract class Personaje extends Utileria {
 	protected String nombre;
 	protected int vida;
-	private final int id = super.getID();
+	protected final int id = super.getID();
 	public Personaje (String nombre, int vida){
 		this.nombre = nombre;
 		this.vida = vida;
@@ -33,7 +33,7 @@ public class Personaje extends Utileria {
 			return false;
 		}
 	}
-	public void setNombre(String nombre){
+	public abstract void setNombre(String nombre){
 		if (nombre.length() > 3 && nombre.length() < 10){
 			this.nombre = nombre;
 		}
@@ -49,7 +49,7 @@ public class Personaje extends Utileria {
 			vida = vida - resta;
 		}
 	}
-	public boolean equals(Object o){
+	public abstract boolean equals(Object o){
 		boolean result = false;
 		Personaje x = (Personaje) o;
 		if ((nombre == x.nombre) && (vida == x.vida)){

@@ -1,10 +1,12 @@
 package mx.edu.labpoo.ordinario.vistas;
+import javax.swing.*;
 
-public class Ventana{ //hereda de JFrame (A)
+public class Ventana extends JFrame{
     Acciones acc;
     
     public Ventana() {
         initComponents();
+        
         //crear una nueva instancia de acc (Acciones) (B)
     }
 

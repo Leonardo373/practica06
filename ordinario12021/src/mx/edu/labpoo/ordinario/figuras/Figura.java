@@ -8,14 +8,14 @@ public abstract class Figura {
 
     protected float area;
 
-    protected float base;
+    protected float perimetro;
 
     public abstract float setArea(){
-
+        this.area = area;
     }
 
     public abstract float setPerimetro(){
-
+        this.perimetro = perimetro;
     }
 
     public String toString(){

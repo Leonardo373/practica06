@@ -18,9 +18,11 @@ public class Planta extends Personaje{
 	public Planta(String nombre){
 		this(nombre, 3, 'A');
 	}
-	public String getIdVida(){
-		return id + "\t" + vida + "\t" + escudo;
-	}
+	
+	//public final String getIdVida(){
+		//return id + "\t" + vida + "\t" + escudo;
+	//}
+
 	public String toString(){
 		return super.toString()+" "+ "{" + escudo + "}";
 	}

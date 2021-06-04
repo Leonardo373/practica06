@@ -14,9 +14,7 @@ public class Personaje{
 	public Personaje (String nombre){
 		this(nombre, 3);
 	}
-	public String getNombre(){
-		return nombre;
-	}
+	
 	public int getVida(){
 		return vida;
 	}

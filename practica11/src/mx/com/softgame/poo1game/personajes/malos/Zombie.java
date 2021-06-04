@@ -1,6 +1,6 @@
 package mx.com.softgame.poo1game.personajes.malos;
 import mx.com.softgame.poo1game.personajes.*;
-public abstract class Zombie extends Personaje{
+public final class Zombie extends Personaje{
 	private boolean ataque;
 	public boolean getAtaque(){
 		return ataque;

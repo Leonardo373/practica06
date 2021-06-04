@@ -8,7 +8,7 @@ import mx.com.softgame.poo1game.utils.*;
 public class Personaje extends Utileria {
 	protected String nombre;
 	protected int vida;
-	private final int id = super.getID();
+	protected int id = super.getID();
 	public Personaje (String nombre, int vida){
 		this.nombre = nombre;
 		this.vida = vida;
@@ -21,6 +21,9 @@ public class Personaje extends Utileria {
 	}
 	public int getVida(){
 		return vida;
+	}
+	private final int id(){
+		return getID();
 	}
 	public final String getIdVida(){
 		return id + "\t" + vida;

@@ -202,7 +202,6 @@ public class ExtraOrdinario extends JFrame {
         pack();
     }
     private void agregar(){
-
         acc.guardar(combType, txtNumber, txtName, txtMsg, txtOther);
         // DEBERA LLAMAR AL METODO guardar()
         // UBICADO EN LA CLASE ACCIONES CUYA INSTANCIA ES acc

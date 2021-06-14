@@ -28,11 +28,14 @@ public class Acciones {
 
 	public void mostrar(int cmp){
 		if (cmp == 1) {
-			
+			CmpName();
 		}else{
-
+			CmpNumber();
 		}
 
+		for (Acciones : list) {
+			System.out.println(super.toString());
+		}
 		System.out.println("---\t---\t---");
 	}
 }

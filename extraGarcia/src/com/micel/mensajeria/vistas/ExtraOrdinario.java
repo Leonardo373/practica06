@@ -9,6 +9,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import com.micel.mensajeria.vistas.*;
 /**
  *
  * @author edgaresaul
@@ -33,10 +34,12 @@ public class ExtraOrdinario extends JFrame {
     private JTextField txtName;
     private JTextField txtNumber;
     private JTextField txtOther;
+    private Acciones acc;
     //agregar un atributo de tipo Acciones (acc) sin inicializar
 
     public ExtraOrdinario() {
         initComponents();
+        acc = new Acciones();
         //crear una nueva instancia (acc) de la clase Acciones
     }
 
@@ -152,6 +155,12 @@ public class ExtraOrdinario extends JFrame {
         );
         // PARA TODAS LAS ACCIONES AGREAR UNA CLASE ANONIMA
         //
+
+        mnuExit.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent a){
+                dispose();
+            }
+        });
         // AGREGAR EL ESCUCHADOR PARA EL MENU mnuExit
         // EL METODO DE LA ACCION DEBERA LLAMAR AL METODO dispose()
         // ESTE METODO NO REQUIERE PROGRAMARSE, SE HEREDA
@@ -160,15 +169,30 @@ public class ExtraOrdinario extends JFrame {
         // EL METODO DE LA ACCION DEBERA CAMIBIAR EL TEXTO DE
         // LA ETIQUETA lblMyName POR EL NOMBRE DEL PROGRAMADOR
         
+        btnSave.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent c){
+                agregar();
+            }
+        });
         // AGREGAR EL ESCUCHADOR PARA EL BOTON btnSave
         // EL METODO DE LA ACCION DEBERA LLAMAR AL METODO agregar()
         // QUE SE ENCUENTRA DEFINIDO AL FINAL
         
+        mnuOpenNumber.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent d){
+                acc.mostrar(1);
+            }
+        });
         // AGREGAR EL ESCUCHADOR PARA EL MENU mnuOpenNumber
         // EL METODO DE LA ACCION DEBERA LLAMAR AL METODO mostrar()
         // UBICADO EN LA CLASE ACCIONES CUYA INSTANCIA ES acc
         // PASANDOLE UN VALOR DE 1 PARA ORDENAR POR NUMERO
 
+        mnuOpenName.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                acc.mostrar(2);
+            }
+        });
         // AGREGAR EL ESCUCHADOR PARA EL MENU mnuOpenName
         // EL METODO DE LA ACCION DEBERA LLAMAR AL METODO mostrar()
         // UBICADO EN LA CLASE ACCIONES CUYA INSTANCIA ES acc
@@ -178,6 +202,8 @@ public class ExtraOrdinario extends JFrame {
         pack();
     }
     private void agregar(){
+
+        acc.guardar(combType, txtNumber, txtName, txtMsg, txtOther);
         // DEBERA LLAMAR AL METODO guardar()
         // UBICADO EN LA CLASE ACCIONES CUYA INSTANCIA ES acc
         // DEBE RECIBIR:

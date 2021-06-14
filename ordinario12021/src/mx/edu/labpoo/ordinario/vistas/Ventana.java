@@ -6,7 +6,7 @@ public class Ventana extends JFrame{
     
     public Ventana() {
         initComponents();
-        
+
         //crear una nueva instancia de acc (Acciones) (B)
     }
 
@@ -28,7 +28,7 @@ public class Ventana extends JFrame{
         jMenu = new javax.swing.JMenu();
         mnuSave = new javax.swing.JMenuItem();
         mnuExit = new javax.swing.JMenuItem();
-
+        
         //establecer el cierre del JFrame al presionar la X de la ventana (C)
 
         lblLados.setText("Número de Lados:");
